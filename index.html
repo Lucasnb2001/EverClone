@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Fonte bootstrap-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--Fonte Ícones-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <!--Fonte css-->
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <title>Evernote Clone</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a href="" class="navbar-brand">
+                    <img src="imagens/mamute.png" width="60">
+                </a>
+                <h2>Everclone</h2>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navTarget">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navTarget">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Notas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Etiquetas</a>
+                        </li>
+                    </ul>
+                    
+                    <form class="form-inline ml-auto justify-content">
+                        <input type="text" class="form-control" placeholder="Pesquisar nota">
+                        <button  class="btn btn-outline-light mr-3"><i class="fas fa-search"></i></button>
+                        
+                    </form>
+                    <a class="btn btn-outline-light" href="addNote.html"><i class="fas fa-plus"></i></a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="mt-4">
+            <div class="card-columns">
+      
+                <div class="card">
+                    <div class="card-header pb-5">
+                        <div class="float-left">
+                            <a>Categoria: A</a>
+                        </div>
+                        
+                        <div class="float-right">
+                            <a class="btn btn-outline-dark" href=""><i class="fas fa-edit"></i></a>
+                            <a onclick="deletar()"class="btn btn-outline-danger" href=""><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">Agendamento de consulta</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        
+                    </div>
+                </div>
+          
+                <div class="card">
+                    <div class="card-header pb-5">
+                        <div class="float-left">
+                            <a>Categoria: A</a>
+                        </div>
+                        
+                        <div class="float-right">
+                            <a class="btn btn-outline-dark" href=""><i class="fas fa-edit"></i></a>
+                            <a onclick="deletar()"class="btn btn-outline-danger" href=""><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Como começei a beber menos</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <div class="card verdin text-white">
+                    <div class="card-header pb-5">
+                        <div class="float-left">
+                            <a>Categoria: A</a>
+                        </div>
+                        
+                        <div class="float-right">
+                            <a class="btn btn-outline-light" href=""><i class="fas fa-edit"></i></a>
+                            <a onclick="deletar()"class="btn btn-outline-light" href=""><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Metas para 2022</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header pb-5">
+                        <div class="float-left">
+                            <a>Categoria: A</a>
+                        </div>
+                        
+                        <div class="float-right">
+                            <a class="btn btn-outline-dark" href=""><i class="fas fa-edit"></i></a>
+                            <a onclick="deletar()"class="btn btn-outline-danger" href=""><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Algo a mais</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header pb-5">
+                        <div class="float-left">
+                            <a>Categoria: A</a>
+                        </div>
+                        
+                        <div class="float-right">
+                            <a class="btn btn-outline-dark" href=""><i class="fas fa-edit"></i></a>
+                            <a onclick="deletar()"class="btn btn-outline-danger" href=""><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">O que eu sonhei hoje</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <script src="js/meuScript.js"></script>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+    
+    </body>
+</html>
